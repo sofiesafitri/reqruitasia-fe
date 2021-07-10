@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ravx4857/public_html/
+    - export DEPLOYPATH=/home/ravx4857/public_html/ravprojects.xyz
     - /bin/cp -R * $DEPLOYPATH
