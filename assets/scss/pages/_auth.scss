@@ -1,0 +1,218 @@
+.auth-layout {
+    background-color: #c5bcbc;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 20px 0;
+    position: relative;
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.auth-page {
+    position: relative;
+
+    &--register {
+    }
+
+    &--login {
+    }
+}
+
+.auth-image {
+    position: absolute;
+    width: 185px;
+
+    @media only screen and (max-width: 1200px) {
+        width: 150px;
+    }
+
+    @media only screen and (max-width: 992px) {
+        width: 134px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 70px;
+    }
+
+    &--register {
+        top: 197px;
+        right: -100px;
+        transform: rotateY(180deg);
+
+        @media only screen and (max-width: 1200px) {
+            top: 281px;
+            right: 3px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            top: auto;
+            bottom: -3px;
+            right: 15px;
+        }
+    }
+
+    &--login {
+        top: 216px;
+        left: -70px;
+
+        @media only screen and (max-width: 1200px) {
+            top: 300px;
+            left: 3px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            top: auto;
+            bottom: -3px;
+            left: 15px;
+        }
+    }
+}
+
+.auth-form {
+    width: 1135px;
+    box-shadow: 0px 0px 20px 3px rgba(192, 192, 192, 0.26);
+    border-radius: $border-radius;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+
+    @media only screen and(max-width: 1200px) {
+        width: 100%;
+    }
+
+    @media only screen and(max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &--login {
+        @media only screen and(max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &--compact {
+        width: 400px;
+        margin: 0 auto;
+        padding: 35px;
+
+        @media only screen and(max-width: 576px) {
+            width: 100%;
+        }
+
+        .auth-form__wrapper {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        width: 65%;
+        padding: 50px;
+
+        @media only screen and (max-width: 992px) {
+            width: 60%;
+            padding: 30px;
+        }
+
+        @media only screen and(max-width: 768px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 576px) {
+            padding: 50px 20px 20px;
+        }
+
+        h1 {
+            font-family: $font-family-base;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 39px;
+            margin-top: 0;
+
+            @media only screen and(max-width: 768px) {
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+            }
+        }
+
+        .auth-form-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__or {
+        margin: 15px auto;
+
+        @media only screen and(max-width: 768px) {
+            width: 100%;
+        }
+
+        .text {
+            width: 85px;
+            margin: 0 auto;
+            line-height: 1.4;
+            display: block;
+            text-align: center;
+            z-index: 9;
+            position: relative;
+
+            @media only screen and(max-width: 768px) {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    &__social-item {
+        margin: 0 15px;
+
+        @media only screen and(max-width: 576px) {
+            margin: 0 20px;
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+
+            image {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    &__tnc {
+        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+
+        a {
+            color: $red-2;
+        }
+    }
+}

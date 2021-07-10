@@ -1,0 +1,41 @@
+.accordion {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0 18px;
+    height: 52px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: $border-radius;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    border: 1px solid $color-border;
+
+    .icon {
+        font-size: 20px;
+    }
+
+    &__panel {
+        padding: 20px;
+        background-color: #ffffff;
+        display: none;
+        overflow: hidden;
+        font-size: 15px;
+        line-height: 22px;
+        border: 1px solid $color-border;
+        margin-top: -5px;
+        border-top: none;
+        border-radius: 0 0 $border-radius $border-radius;
+
+        &.active {
+            display: block;
+        }
+    }
+}

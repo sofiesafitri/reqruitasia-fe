@@ -1,0 +1,26 @@
+.simple-pagination {
+    width: 100%;
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li.nav-item {
+            &.prev {
+                float: left;
+
+                a {
+                    padding-left: 0;
+                }
+            }
+
+            &.next {
+                float: right;
+
+                a {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

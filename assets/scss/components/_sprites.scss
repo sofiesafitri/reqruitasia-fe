@@ -1,0 +1,28 @@
+.sprite-icons {
+    background-image: url('~assets/images/icons-colors-full.png');
+    background-repeat: no-repeat;
+
+    &--laptop {
+        background-position: -150px -148px;
+    }
+
+    &--phone {
+        background-position: 7px -148px;
+    }
+
+    &--monitor {
+        background-position: -70px -148px;
+    }
+
+    &--typewriter {
+        background-position: -232px -148px;
+    }
+
+    &--chart-board {
+        background-position: -80px 35px;
+    }
+
+    &--rocket-lamp {
+        background-position: 60px 35px;
+    }
+}

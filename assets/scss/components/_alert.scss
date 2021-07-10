@@ -1,0 +1,21 @@
+.alert {
+    padding: 15px;
+    border-radius: $border-radius-general;
+    overflow: hidden;
+    box-shadow: $box-shadow-2;
+
+    &--success {
+        background-color: $color-success;
+        color: #ffffff;
+    }
+
+    &--danger,
+    &--error {
+        background-color: $color-danger;
+        color: #ffffff;
+    }
+
+    &--warning {
+        background-color: $color-warning;
+    }
+}

@@ -1,0 +1,222 @@
+.mobile-nav {
+    height: 45px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    display: none;
+
+    @media only screen and(max-width: 992px) {
+        display: block;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            height: 100%;
+            width: 25%;
+
+            a {
+                text-decoration: none;
+                color: $grey-3;
+                font-size: 18px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.25s ease-in;
+
+                &.active {
+                    color: $color-primary;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    &__icon-wrapper {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        @include flexCenter;
+    }
+
+    &__notification-dot {
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background-color: red;
+        border-radius: 50%;
+    }
+}
+
+.man {
+    position: fixed;
+    top: 0;
+    left: -255px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    transition: all 0.25s ease-in;
+
+    @media only screen and(max-width: 992px) {
+        display: flex;
+
+        &.show {
+            left: 0;
+            box-shadow: 0px 3px 5px 4px rgba(0, 0, 0, 0.26);
+        }
+    }
+
+    &__outer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.65);
+        z-index: 999;
+    }
+
+    &__top-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    &__top-bg-1 {
+        width: 130%;
+        height: 130%;
+        position: absolute;
+        top: -199px;
+        left: -66px;
+        background-color: #1d81b5;
+        border-radius: 50%;
+        z-index: 99;
+    }
+
+    &__top-bg-2 {
+        width: 130%;
+        height: 130%;
+        position: absolute;
+        top: -177px;
+        left: -63px;
+        background-color: lighten(#1d81b5, 5);
+        border-radius: 50%;
+        z-index: 9;
+    }
+
+    &__top-bg-3 {
+        width: 130%;
+        height: 130%;
+        position: absolute;
+        top: -158px;
+        left: -61px;
+        background-color: lighten(#1d81b5, 10);
+        border-radius: 50%;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 999;
+
+        img {
+            height: 35px;
+        }
+    }
+
+    &__avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 8px;
+            margin-right: 0;
+            border-width: 3px;
+        }
+    }
+
+    &__small-dot {
+        position: absolute;
+        top: 167px;
+        right: 20px;
+        width: 10px;
+        height: 10px;
+        background-color: $color-primary;
+        border-radius: 50%;
+    }
+
+    &__big-dot {
+        position: absolute;
+        top: 220px;
+        left: -4px;
+        width: 22px;
+        height: 22px;
+        background-color: $color-primary;
+        border-radius: 50%;
+    }
+
+    &__user-name {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    &__auth-menu {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 15px;
+                text-align: center;
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    &__logout {
+        margin-top: auto;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &__auth-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: center;
+    }
+}

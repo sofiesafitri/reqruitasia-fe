@@ -1,0 +1,152 @@
+$glide-class: "glide" !default;
+$glide-element-separator: "__" !default;
+$glide-modifier-separator: "--" !default;
+
+.#{$glide-class} {
+    $this: &;
+
+    $se: $glide-element-separator;
+    $sm: $glide-modifier-separator;
+
+    &#{$se}arrow {
+        position: absolute;
+        display: block;
+        top: 50%;
+        z-index: 2;
+        color: $black;
+        text-transform: uppercase;
+        padding: 5px 5px;
+        text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        cursor: pointer;
+        background: none;
+        border: none;
+        transition: all 250ms ease;
+        transform: translateY(-50%);
+        line-height: 1;
+        font-size: 23px;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            // background-color: $primary;
+            // border-color: $primary;
+        }
+
+        &#{$sm}left {
+            left: 0.5em;
+        }
+
+        &#{$sm}right {
+            right: 0.5em;
+        }
+
+        &#{$sm}disabled {
+            opacity: 0.33;
+        }
+
+        svg {
+            width: 46px;
+            height: 46px;
+
+            image {
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+
+    &#{$se}bullets {
+        position: absolute;
+        z-index: 2;
+        bottom: 2em;
+        left: 50%;
+        display: inline-flex;
+        list-style: none;
+        transform: translateX(-50%);
+    }
+
+    &#{$se}bullet {
+        background-color: #ffffff;
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        border-radius: 12px;
+        border: none;
+        transition: all 250ms ease-in-out;
+        line-height: 0;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+        margin: 0 0.25em;
+
+        &--active {
+            width: 35px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover,
+        &:focus {
+            // background-color: $primary;
+        }
+
+        &#{$sm}active {
+            // background-color: $primary;
+        }
+    }
+
+    &#{$sm}swipeable {
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+    }
+
+    &#{$sm}dragging {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+    }
+
+    &--arrow-outside {
+        &:hover>.glide__arrows .glide__arrow {
+            opacity: 1;
+        }
+
+        .glide__track {
+            width: 88%;
+            margin: 0 auto;
+
+            @media only screen and (max-width: 992px) {
+                width: 95%;
+            }
+        }
+
+        .glide__arrow {
+            border: none;
+            box-shadow: none;
+            // color: $gray-800;
+            font-size: 40px;
+            opacity: 0;
+            transition: all .2s ease;
+
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+
+            &--left {
+                left: 0.7em;
+            }
+
+            &--right {
+                right: 0.7em;
+            }
+        }
+    }
+}

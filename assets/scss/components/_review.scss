@@ -1,0 +1,66 @@
+.review-form {
+    &__fake {
+        height: $height-form;
+        border: 1px solid $color-border;
+        border-radius: $border-radius-form;
+        background-color: $color-form-control-bg;
+        padding: $padding-form;
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: $grey-1;
+        cursor: text;
+    }
+
+    &__stars {
+        .star {
+            cursor: pointer;
+
+            &.light {
+                svg {
+                    path {
+                        fill: $color_star;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.reviews {
+    &__item {
+        display: flex;
+        border-bottom: 1px solid $color-border;
+        padding: 25px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    &__details {
+        h4 {
+            font-weight: 700;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: $grey-5;
+    }
+
+    &__meta-separator {
+        width: 1px;
+        border: 1px solid $color-border;
+        margin: 0 10px;
+        height: 12px;
+    }
+}

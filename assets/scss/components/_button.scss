@@ -1,0 +1,235 @@
+.btn {
+    border: none;
+    height: $height-form;
+    min-width: 85px;
+    width: fit-content;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $color-btn-black;
+    @include flexCenter;
+    text-decoration: none;
+    padding: $padding-form;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &--block {
+        width: 100%;
+    }
+
+    &--bold {
+        font-weight: 600;
+    }
+
+    &--shadow {
+        box-shadow: 5px 5px 20px rgba(0, 129, 202, 0.3);
+    }
+
+    &--white {
+        color: $black;
+        background: #ffffff;
+
+        &:hover {
+            background: darken(#ffffff, 10);
+        }
+
+        &:disabled {
+            background: lighten(#ffffff, 20);
+        }
+    }
+
+    &--transparent {
+        background: none;
+        min-width: auto;
+    }
+
+    &--grey {
+        color: $black;
+        background: $grey-4;
+
+        &:hover {
+            background: darken($grey-4, 10);
+        }
+
+        &:disabled {
+            background: lighten($grey-4, 20);
+        }
+    }
+
+    &--primary {
+        color: $color-btn-light;
+        background-color: #16568B;
+
+        &:hover {
+          background-color: #144975;
+        }
+
+        &:disabled {
+            background: lighten(#16568B, 35);
+        }
+    }
+
+    &--warning {
+        background: $yellow;
+
+        &:hover {
+            background: darken($yellow, 10);
+        }
+
+        &:disabled {
+            background: lighten($yellow, 20);
+        }
+    }
+
+    &--info {
+        background: $blue-2;
+        color: #ffffff;
+
+        &:hover {
+            background: darken($blue-2, 10);
+        }
+
+        &:disabled {
+            background: lighten($blue-2, 20);
+        }
+    }
+
+    &--success {
+        background: $green;
+        color: #ffffff;
+
+        &:hover {
+            background: darken($green, 10);
+        }
+
+        &:disabled {
+            background: lighten($green, 20);
+        }
+    }
+
+    &--danger {
+        background: $red;
+        color: #ffffff;
+
+        &:hover {
+            background: darken($red, 10);
+        }
+
+        &:disabled {
+            background: lighten($red, 20);
+        }
+    }
+
+    &.btn--lg {
+        height: $height-form-lg;
+        font-size: 18px;
+    }
+
+    &.btn--sm {
+        height: $height-form-sm;
+        font-size: 13px;
+    }
+
+    &.btn--long {
+        min-width: 235px;
+    }
+
+    &.btn-outline {
+        background: none;
+        border-width: 2px;
+        border-style: solid;
+
+        &--bg-white {
+            background-color: #ffffff;
+        }
+
+        &--color-black {
+            color: $color-btn-black;
+        }
+
+        &--color-light {
+            color: $color-btn-light;
+        }
+
+        &--white {
+            border-color: #ffffff;
+            background: transparent;
+
+            &:hover {
+                color: $black;
+            }
+
+            &:disabled {
+                border-color: lighten(#ffffff, 20);
+            }
+        }
+
+        &--primary {
+            border-color: $color-primary;
+            background: transparent;
+
+            &:disabled {
+                border-color: lighten($color-primary, 20);
+            }
+        }
+
+        &--warning {
+            border-color: $yellow;
+            background: transparent;
+
+            &:hover {
+                color: $color-btn-black;
+            }
+
+            &:disabled {
+                border-color: lighten($yellow, 20);
+            }
+        }
+
+        &--info {
+            border-color: $blue-2;
+            background: transparent;
+
+            &:hover {
+                color: $color-btn-black;
+            }
+
+            &:disabled {
+                border-color: lighten($blue-2, 20);
+            }
+        }
+
+        &--success {
+            border-color: $green;
+            background: transparent;
+
+            &:hover {
+                color: $color-btn-black;
+            }
+
+            &:disabled {
+                border-color: lighten($green, 20);
+            }
+        }
+
+        &--danger {
+            border-color: $red;
+            background: transparent;
+
+            &:hover {
+                color: #ffffff;
+            }
+
+            &:disabled {
+                border-color: lighten($red, 20);
+            }
+        }
+    }
+}

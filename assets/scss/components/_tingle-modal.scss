@@ -1,0 +1,45 @@
+.tingle-modal-box__content {
+    padding: 15px 15px;
+
+    iframe {
+        border: none;
+    }
+}
+
+.tingle-modal {
+    &.youtube-embed {
+        .tingle-modal-box {
+            width: 820px;
+            height: 475px;
+
+            @media only screen and (max-width: 992px) {
+                width: 720px;
+                height: 415px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 500px;
+                height: 295px;
+            }
+
+            @media only screen and (max-width: 576px) {
+                width: 80%;
+                margin: 0 auto;
+                height: 230px;
+            }
+
+            .tingle-modal-box__content {
+                height: 100%;
+
+                iframe {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+
+
+        }
+
+
+    }
+}

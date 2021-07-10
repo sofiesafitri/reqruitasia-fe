@@ -1,0 +1,20 @@
+.employer-page {
+    position: relative;
+    min-height: 550px;
+
+    &__nav {
+        z-index: 9;
+        position: relative;
+    }
+
+    &__content {
+        z-index: 9;
+        position: relative;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

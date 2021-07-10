@@ -1,0 +1,94 @@
+.user-auth {
+  display: flex;
+  flex-direction: column;
+  
+  label {
+    margin-left: 12px;
+  }
+  
+
+  &__input {
+    border: 1px solid grey;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+
+    input {
+      background-color: transparent;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-radius: 8px;
+      margin: 8px 14px;
+    }
+
+    @media (max-width: 768px) {
+      input {
+        color: white;
+      }
+    }
+
+    
+  }
+
+  @media (max-width: 768px) {
+    &__input {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(20px);
+      border: 1px solid transparent;
+    }
+  }
+
+  &__submit {
+    cursor: pointer;
+    padding: 10px 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #16568B;
+  }
+
+
+  &__submit:hover {
+    background-color: #144975;
+  }
+}
+
+.error-message {
+  height: 14px;
+  margin-left: 5px;
+  margin-bottom: 12px;
+  font-size: 8pt;
+  color: red;
+}
+
+.active {
+  border: 1px solid #0B66C2;
+}
+
+
+.visible {
+  flex-basis: 15%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+
+  img {
+    height: 25px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .active {
+    border: 1px solid white;
+  }
+
+  .error-message {
+    color: rgb(255, 208, 0);
+  }
+}

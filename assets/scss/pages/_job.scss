@@ -1,0 +1,216 @@
+.job {
+    display: flex;
+
+    @media only screen and(max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &__details {
+        width: 60%;
+        margin-right: 5%;
+
+        @media only screen and(max-width: 768px) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__main-info {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__company-logo {
+        margin-right: 20px;
+    }
+
+    &__main-info-inner {
+        flex: 1;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    &__company-name {
+        a {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+
+    &__detail-2 {
+        display: flex;
+
+        @media only screen and(max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+
+    &__detail-2-item {
+        margin-right: 70px;
+
+        @media only screen and(max-width: 576px) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__skills {
+        display: flex;
+
+        @media only screen and(max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+
+    &__skills-item {
+        margin-right: 30px;
+
+        @media only screen and(max-width: 576px) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__salary {
+        display: flex;
+
+        @media only screen and(max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+
+    &__salary-item {
+        margin-right: 30px;
+
+        @media only screen and(max-width: 576px) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.job-company {
+    width: 35%;
+
+    @media only screen and(max-width: 768px) {
+        width: 100%;
+    }
+
+    &__inner {
+        background: #ffffff;
+        box-shadow: 0px 0px 20px rgba(129, 129, 129, 0.1);
+        padding: 30px;
+        border-radius: $border-radius;
+        overflow: hidden;
+        position: relative;
+
+        @media only screen and(max-width: 992px) {
+            padding: 15px;
+        }
+    }
+
+    &__bookmark {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &--marked,
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .logo-sq {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+    &__name {
+        text-align: center;
+
+        a {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &__city {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 19px;
+        color: $grey-2;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__website {
+        font-size: 12px;
+        line-height: 13px;
+        text-align: center;
+    }
+
+    &__button {
+        margin-top: 30px;
+    }
+
+    &__share {
+        display: flex;
+        margin-top: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .social-link {
+            width: 35px;
+            margin: 0 8px;
+
+            @media only screen and(max-width: 576px) {
+                width: 28px;
+                margin: 0 10px;
+            }
+
+            svg {
+                width: 35px;
+                height: 35px;
+
+                @media only screen and(max-width: 576px) {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                image {
+                    width: 35px;
+                    height: 35px;
+
+                    @media only screen and(max-width: 576px) {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

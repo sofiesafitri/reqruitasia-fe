@@ -1,0 +1,162 @@
+.color-primary {
+    color: $color-primary;
+}
+
+.color-secondary {
+    color: $color-secondary;
+}
+
+.color-grey {
+  color: #9A9AB0;
+}
+
+.color-black {
+  color: rgba(24, 25, 31, 1);
+}
+
+.color-white {
+  color: white;
+}
+
+.img-fluid,
+.video-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media only screen and(max-width: 1200px) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+}
+
+.text--success {
+    color: $color-success;
+}
+
+.text--danger {
+    color: $color-danger;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block-edit {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+@for $i from 1 to 6 {
+    .mt-#{$i} {
+        margin-top: 4px * $i;
+    }
+
+    .mr-#{$i} {
+        margin-right: 4px * $i;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: 4px * $i;
+    }
+
+    .ml-#{$i} {
+        margin-left: 4px * $i;
+    }
+
+    .pt-#{$i} {
+        padding-top: 4px * $i;
+    }
+
+    .pr-#{$i} {
+        padding-right: 4px * $i;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: 4px * $i;
+    }
+
+    .pl-#{$i} {
+        padding-left: 4px * $i;
+    }
+}
+
+.el-short-long {
+    height: 110px;
+    overflow: hidden;
+
+    &.full {
+        height: auto;
+    }
+}
+
+.el-short-long-toggle-full {
+    float: right;
+    background: #ffffff;
+    position: relative;
+    padding: 1px 10px;
+}
+
+.el-short-long-toggle-less {
+    float: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-content-center {
+    justify-content: center;
+}
+
+.hide-tablet {
+    @media only screen and(max-width: $tablet) {
+        display: none;
+    }
+}
+
+.show-tablet {
+    @media only screen and (max-width: $tablet) {
+        display: block;
+    }
+
+    @media only screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.border,
+.border-top,
+.border-bottom,
+.border-right,
+.border-left {
+    border-color: $color-border;
+}

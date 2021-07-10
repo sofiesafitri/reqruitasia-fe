@@ -1,0 +1,136 @@
+ul {
+    padding-left: 25px;
+
+    &.list-no-style {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.progress-list {
+    padding-left: 15px;
+    list-style-type: none;
+    border-left: 2px solid $color-primary;
+
+    li {
+        position: relative;
+        padding: 7px 0;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: $color-primary;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: -21px;
+        }
+
+        &:hover {
+            .progress-list__actions {
+                display: flex;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    &__sub-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    &__info {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    &__footer {
+        font-size: 13px;
+        color: $grey-2;
+    }
+
+    &__actions {
+        display: none;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 13px;
+    }
+}
+
+.check-list {
+    padding-left: 25px;
+    list-style-type: none;
+    margin-top: 5px;
+
+    li {
+        position: relative;
+        line-height: 1;
+        margin-bottom: 10px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-image: url('~assets/images/icons/other/check-o.svg');
+            background-size: 15px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: -25px;
+        }
+    }
+}
+
+.sosmed {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        margin-right: 15px;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            svg {
+                width: 40px;
+                height: 40px;
+
+                image {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+dl {
+    dt {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    dd {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}

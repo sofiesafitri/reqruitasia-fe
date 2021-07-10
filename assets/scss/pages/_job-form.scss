@@ -1,0 +1,117 @@
+.njb {
+    display: flex;
+
+    @media only screen and(max-width: 576px) {
+        flex-direction: column;
+    }
+
+    &__nav {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media only screen and(max-width: 576px) {
+            width: 100%;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+    }
+
+    &__nav-circle {
+        border: 1px solid #B1B1B1;
+        color: #B1B1B1;
+        border-radius: 50%;
+        background-color: #ffffff;
+        width: 37px;
+        height: 37px;
+        @include flexCenter;
+        transition: all .25s ease-in-out;
+
+        @media only screen and(max-width: 576px) {
+            display: none;
+        }
+
+        &:hover {
+            border-color: $color-primary;
+            color: $color-primary;
+        }
+    }
+
+    &__nav-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media only screen and(max-width: 576px) {
+            display: none;
+        }
+
+        li {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            margin: 13px 0;
+            border: 1px solid #3E4043;
+            border-radius: 50%;
+            display: block;
+            transition: all .25s ease-in-out;
+
+            &:first-child {
+                margin-top: 26px;
+            }
+
+            &:last-child {
+                margin-bottom: 26px;
+            }
+
+            &.active {
+                width: 26px;
+                height: 26px;
+                background-color: #3E4043;
+            }
+
+            &:hover {
+                background-color: #3E4043;
+            }
+        }
+    }
+
+    &__main {
+        flex: 1;
+        display: flex;
+        padding: 0 0 0 25px;
+
+        @media only screen and(max-width: 992px) {
+            flex-direction: column;
+        }
+
+        @media only screen and(max-width: 576px) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    &__form {
+        flex: 1;
+        padding: 0 25px;
+
+        @media only screen and(max-width: 992px) {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__actions {
+        width: 300px;
+
+        @media only screen and(max-width: 992px) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.jap-card {
+    padding: 20px;
+    height: 215px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__main {
+        display: flex;
+    }
+
+    &__logo {
+        margin-right: 20px;
+        width: 25%;
+    }
+
+    &__info {
+        width: 75%;
+
+    }
+
+    &__title {
+        color: #3E4043;
+        font-size: 17px;
+        line-height: 20px;
+
+        a {
+            color: #3E4043;
+        }
+    }
+
+    &__company {
+        font-weight: 500;
+        line-height: 14px;
+        margin: 10px 0;
+
+        a {
+            color: $blue-2;
+        }
+    }
+
+    &__location {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__salary {
+        font-weight: 500;
+        line-height: 14px;
+        font-size: 12px;
+        color: $color-text;
+
+        svg {
+            width: 12px;
+            height: 12px;
+
+            image {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+
+    &__rejection-msg {
+        margin-top: 10px;
+        font-size: 12px;
+        color: $color-danger;
+    }
+
+    &__interview-detail {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}

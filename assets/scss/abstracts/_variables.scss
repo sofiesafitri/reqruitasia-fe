@@ -1,0 +1,72 @@
+// Colors
+$red: #c63d2f;
+$red-hover: lighten($red, 10);
+$red-2: #c0392b;
+$red-2-hover: lighten($red-2, 10);
+$red-light: #e74c3c;
+$red-light-hover: lighten($red-light, 10);
+$yellow: #eec445;
+$yellow-hover: darken($yellow, 15);
+$yellow2: #e2ac47;
+$green: #10ac84;
+$green-hover: darken($green, 15);
+$blue: #0081ca;
+$blue-hover: darken($blue, 15);
+$blue: #0081ca;
+$blue-hover: darken($blue, 15);
+$blue-2: #075785;
+$blue-2-hover: darken($blue-2, 15);
+$grey-1: #959595;
+$grey-2: #666666;
+$grey-3: #454d59;
+$grey-4: #e8e8e8;
+$grey-5: #b5b5b5;
+$black: #1e272e;
+$blue-black: #0b2239;
+
+$body-bg: #f7f7f7;
+$color-text: $grey-3;
+$color-heading: $black;
+$color-primary: #0e7ebb;
+$color-primary-hover: lighten($color-primary, 10);
+$color-secondary: #0288d1;
+$color-secondary-hover: darken($color-secondary, 10);
+$color-btn-black: #222222;
+$color-btn-black-hover: lighten($color-btn-black, 10);
+$color-btn-blue: #16568B;
+$color-btn-light: #ffffff;
+$color-form-control-bg: #f9f9f9;
+$color-link: darken($color-primary, 10);
+$color-form-border: $grey-1;
+$color-link-secondary: $blue;
+$color-border: #d6d3d3;
+$color-star: #ffd65e;
+
+$color-success: $green;
+$color-warning: $yellow;
+$color-danger: $red-light;
+
+// Breakpoints
+$mobile: "576px";
+$tablet: "768px";
+$notebook: "992px";
+$desktop: "1200px";
+
+// Typography
+$font-family-base: "Raleway", sans-serif;
+$font-family-heading: "Raleway", sans-serif;
+
+// Numbers
+$border-radius: 3px;
+$border-radius-form: $border-radius;
+$border-radius-image: $border-radius;
+$border-radius-general: 5px;
+$height-form: 40px;
+$height-form-lg: 52px;
+$height-form-sm: 35px;
+$padding-form: 10px;
+
+// Utils
+$box-shadow: 3px 5px 20px rgba(135, 135, 135, 0.1);
+$box-shadow-2: 0px 0px 40px rgba(159, 159, 159, 0.2);
+

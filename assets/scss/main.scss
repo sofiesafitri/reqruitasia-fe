@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+@import "../../node_modules/normalize.css/normalize.css";
+
+@import "../../node_modules/vue-date-pick/dist/vueDatePick.css";
+@import "../../node_modules/sweetalert2/dist/sweetalert2.css";
+@import "../../node_modules/@glidejs/glide/dist/css/glide.core.css";
+@import "../../node_modules/vue-select/src/scss/vue-select.scss";
+@import "../../node_modules/tingle.js/dist/tingle.css";
+
+@import "./fonts/reqruit.css";
+@import "./fonts/reqruit-codes.css";
+@import "./fonts/animation.css";
+// add font
+@import "./fonts/roboto.css";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/animations";
+
+@import "base/base";
+@import "base/typography";
+@import "base/basscss";
+@import "base/utils";
+
+@import "components/accordion";
+@import "components/alert";
+@import "components/badge";
+@import "components/blog-list";
+@import "components/breadcrumb";
+@import "components/button";
+@import "components/card";
+@import "components/drop-zone";
+@import "components/footer";
+@import "components/form";
+@import "components/glide.theme";
+@import "components/header";
+@import "components/images";
+@import "components/job-application-card";
+@import "components/job-card";
+@import "components/job-list";
+@import "components/list";
+@import "components/loading-block";
+@import "components/mobile-nav";
+@import "components/modal";
+@import "components/progress-bar";
+@import "components/rating";
+@import "components/record-video";
+@import "components/review";
+@import "components/section";
+@import "components/sidebar";
+@import "components/silentbox";
+@import "components/simple-pagination";
+@import "components/simple-side-nav";
+@import "components/sortable-list";
+@import "components/sprites";
+@import "components/tab";
+@import "components/table";
+@import "components/testimonial";
+@import "components/tingle-modal";
+@import "components/vue-date-pick";
+
+//new design component scss
+@import "components/_new_header";
+@import "components/_new-third-party-auth.scss";
+@import "components/_new-user-auth.scss";
+@import "components/_new-user-auth-desc.scss";
+@import "components/_new-footer.scss";
+
+
+@import "pages/auth";
+@import "pages/company";
+@import "pages/employer";
+@import "pages/english-test";
+@import "pages/home";
+@import "pages/job-applications";
+@import "pages/job-form";
+@import "pages/job-search";
+@import "pages/job";
+@import "pages/manage-job-applications";
+@import "pages/my-account";
+@import "pages/notification";
+@import "pages/page";
+@import "pages/req-type";
+
+
+//new design page scss
+@import "pages/new-auth";
+@import "pages/new-home"

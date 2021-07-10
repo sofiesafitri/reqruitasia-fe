@@ -1,0 +1,39 @@
+.user-auth-desc {
+  margin: auto;
+  padding: 67px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50px;
+  width: 70%;
+  h1 {
+    margin-bottom: 80px;
+  }
+
+}
+
+.user-auth-desc-emp {
+  margin: auto;
+  padding: 67px;
+  background: rgba(25, 25, 25, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50px;
+  width: 70%;
+  h1 {
+    margin-bottom: 80px;
+  }
+}
+
+.text-emp{
+  color: white;
+}
+
+.link{
+  color: white;
+  text-decoration: underline;
+}
+.link-can{
+  color: black;
+  text-decoration: underline;
+}

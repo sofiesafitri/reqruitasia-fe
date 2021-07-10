@@ -1,0 +1,19 @@
+svg.rating-star {
+    width: 20px;
+    height: 20px;
+
+    @media only screen and (max-width:576px) {
+        width: 18px;
+        height: 18px;
+    }
+
+    image {
+        width: 20px;
+        height: 20px;
+
+        @media only screen and (max-width:576px) {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.logo-sq {
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: $border-radius;
+    overflow: hidden;
+    @include flexCenter;
+}
+
+.avatar {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 2px solid $color-primary;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.logo-center {
+    @include flexCenter;
+}

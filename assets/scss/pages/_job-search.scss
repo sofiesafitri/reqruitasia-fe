@@ -1,0 +1,57 @@
+.job-search {
+    &__filter-list {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__filter-text {
+        margin-right: 15px;
+    }
+
+    &__filter-items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__filter-item {
+        border-radius: $border-radius-form;
+        border: 1px solid $color-form-border;
+        padding: 10px 15px;
+        background-color: $color-form-control-bg;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        .text {}
+
+        .remove {
+            cursor: pointer;
+            transition: all .25s ease-in-out;
+
+            &:hover {
+                color: $color-danger;
+            }
+        }
+    }
+}
+
+.job-not-found {
+    text-align: center;
+
+    .icon {
+        font-size: 50px;
+        color: $color-danger;
+        margin-bottom: 20px;
+    }
+
+    .h3 {
+        color: $grey-2;
+    }
+
+}
+
+.reset-filters {
+    color: $color-danger;
+}

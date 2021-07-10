@@ -1,0 +1,147 @@
+.footer {
+    background-color: $color-primary;
+    padding: 50px 0 0;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
+
+    &__top {
+        margin-bottom: 25px;
+
+        @media only screen and (max-width: 1200px) {
+            padding: 0;
+        }
+    }
+
+    &__widget {
+        &:first-child {
+            padding-right: 35px;
+
+            @media only screen and (max-width: 768px) {
+                padding-right: 0;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__widget-title {
+        font-family: $font-family-base;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 25px;
+        line-height: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    &__widget-nav {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        margin-bottom: 25px;
+
+        a {
+            font-size: 55px;
+            color: #ffffff;
+            font-weight: 500;
+
+            img {
+                height: 90px;
+            }
+        }
+    }
+
+    &__about {
+        white-space: pre-line;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__social-cta {
+        margin-right: 30px;
+
+        @media only screen and (max-width: 992px) {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__social-links {
+        padding: 15px 0;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                margin-right: 20px;
+
+                @media only screen and (max-width: 992px) {
+                    margin-right: 35px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    svg {
+                        width: 32px;
+                        height: 32px;
+
+                        image {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid #e8e8e8;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 30px 0;
+
+        a {
+            color: #ffffff;
+        }
+    }
+}

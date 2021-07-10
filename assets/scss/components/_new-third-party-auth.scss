@@ -1,0 +1,70 @@
+.third-party {
+  display: flex;
+  flex-direction: column;
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin: 7px 0 7px 0;
+    border-radius: 8px;
+    border: 1px solid #0B66C2;
+
+    img {
+      flex-basis: 25%;
+      padding: 5px;
+      height: 35px;
+      width: auto;
+    }
+
+    span {
+      flex-basis: 75%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      span {
+        text-align: start;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__button {
+      border: none;
+    }
+  }
+}
+
+#google {
+  background-color: white;
+  color: #0B66C2;
+  transition: all 0.4s ease;
+}
+
+#google:hover {
+  background-color: whitesmoke;
+}
+
+#linkedIn {
+  background-color: #0B66C2;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+#linkedIn:hover {
+  background-color: #105daa;
+}
+
+
+#facebook {
+  background-color: #16568B;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+#facebook:hover {
+  background-color: #144975;
+}
