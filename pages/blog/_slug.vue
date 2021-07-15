@@ -40,7 +40,6 @@ export default {
     async asyncData({ $axios, params }) {
         let { data } = await $axios.$get(`article/${params.slug}`);
         let baseUrl = process.env.APP_BASE_URL;
-
         return {
             article: data.article,
             current_page_url: `${baseUrl}/article/${data.article.slug}`,

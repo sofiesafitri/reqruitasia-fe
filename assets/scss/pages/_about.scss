@@ -1,0 +1,211 @@
+.about-hero{
+    background-color: #F6FDFA;
+    display: block;
+    padding-top: 60px;
+    &__title {
+        padding-top: 80px;
+        flex-direction: column;
+        justify-content: center;
+      }
+}
+.box-header{
+    padding-top: 150px;
+}
+
+.acc-1{
+    padding-top:210px;
+}
+@media screen and (max-width: 576px) {
+    .box-header{
+        height: 250px;
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('~/assets/images/header-about-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: brightness(0.8);
+    }
+    .acc-1{
+        padding-top: 0;
+    }
+    .mobile-text-white{
+        color: white;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about-hero{
+    padding-top: 0px;
+    }
+}
+.aboutinfo{
+    background-color: rgba(35, 106, 159, 1);
+    color: white;
+    padding:50px 100px;
+    display: block;
+    
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+}
+.aboutinfo-2{
+    background-color: rgba(35, 106, 159, 1);
+    color: white;
+    display: block;
+    
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+}
+.mobilecenter{
+    text-align: left;
+}
+.about-i{
+    padding: 50px 50px;
+    background-color: white;
+}
+@media screen and (max-width: 600px) {
+    .aboutinfo{
+        padding: 50px 10px;
+    }
+    .aboutinfo-2{
+        text-align: center !important;
+        padding: 0;
+    }
+    .about-i{
+        padding: 50px 0px 0px;
+    }
+    .mobilecenter{
+        text-align: center !important;
+    }
+}
+.join-us-button{
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #065489;
+    background-color: white;
+    cursor: pointer;
+}
+.join-us-button:hover{
+    background-color: #163c55;
+    color: white;
+}
+
+
+.img-hero{
+    height: 450px;
+}
+.img-about{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text-header{
+    font-size: 2.3em;
+}
+
+.imgcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-2{
+    max-width: 100%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.star-logo{
+    background-image: url(~/assets/images/About-Stars.png);
+    width: 900px;
+}
+.box-str{
+    padding: 30px 10px;
+    background-color: #F9F9F9;
+}
+.text-hide{
+    color: transparent;
+}
+
+/* Float four columns side by side */
+.card-column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .card-row {
+      margin: 0 10px;
+      padding-right: 100px;
+      padding-left: 100px;
+      padding-bottom: 100px;
+    }
+  
+  /* Clear floats after the columns */
+  .card-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .img-team{
+    width:80%; 
+    height:300px;
+  }
+  .img-team2{
+    width:80%; 
+    height:300px;
+  }
+  .text-about{
+      padding-top: 20px;
+  }
+  @media screen and (max-width: 1200px) {
+      .text-about{
+          padding-top: 0px;
+      }
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .card-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .card-row{
+        padding: 10px;
+    }
+    .img-team{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .img-team2{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    .text-about{
+        padding-top: 20px;
+        display: block;
+    }
+  }
+  
+  /* Style the counter cards */
+  .cardbox {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 10px 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+  }
+

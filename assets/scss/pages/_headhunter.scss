@@ -1,0 +1,79 @@
+.hero-image-hunter {
+    padding: 50px;
+    margin-top: 70px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('~/assets/images/header-hunter.png');
+    @media screen and (max-width: 1000px) {
+        margin-top: 0;
+        height: 200px;
+    }
+  }
+
+  .how-hire{
+    padding:50px 30px;
+    background-color: white;
+    img{
+        width: 80%;
+    }
+    @media screen and (max-width: 600px) {
+        img{
+            width: 100%;
+        }
+    }
+  }
+  .hr-hunter{
+    background-color: grey;
+    padding-top: 0px;
+    width: 400px;
+    max-width: 100%;
+  }
+  
+.img-form-hunter{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    img{
+      max-width: 100%;
+      margin: 0;
+      top: 55%;
+      width: 40%;
+      position: absolute;
+      -ms-transform: translateY(23%);
+      transform: translateY(23%);
+    }
+    .rectangle{
+      background-color: #236A9F;
+      display: block;
+      height: 100%;
+      width: 50%;
+      z-index: auto;
+      float: right;
+      right: 0;
+      position: relative;
+      }
+      @media screen and (max-width: 600px) {
+        height: 320px;
+        img{
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          top: 50%;
+          left: 10%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          display: block;
+          position: static;
+        }
+        .rectangle{
+          width: 100%;
+          height: 200px;
+        }
+      }
+}

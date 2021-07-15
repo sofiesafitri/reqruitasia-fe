@@ -14,7 +14,6 @@
 
 <script>
 import ArticleCard from "~/components/Article/ArticleCard";
-
 export default {
     head() {
         return {
@@ -38,7 +37,6 @@ export default {
     },
     async asyncData({ $axios }) {
         let { data } = await $axios.$get(`articles`);
-
         return {
             articles: data.articles,
             meta_title: data.meta_title,

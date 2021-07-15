@@ -73,13 +73,10 @@ export default {
             this.user_avatar = this.user.avatar_url;
             this.has_unread_notifications = this.user.has_unread_notifications;
         }
-
         this.$bus.$on("avatar-update", (avatar_url) => {
             this.user_avatar = avatar_url;
         });
-
         //this.routeCheck();
-
         if (process.client) {
             const notifEl = document.getElementById("header__notification");
             const vm = this;
@@ -115,11 +112,9 @@ export default {
                 this.btn_outline_class = "btn-outline--color-dark";
                 this.header_text_class = "";
             }
-
             this.explore_jobs = route_path == "/explore-jobs" ? true : false;
             console.log(route_path)
     },
-
   },
 }
 </script>

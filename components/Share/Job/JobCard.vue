@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 job-card" :class="{ grow: grow }">
+    <div class="job-card" :class="{ grow: grow }">
         <div v-if="!grow">
             <div class="job-card__main">
                 <div v-if="!job.hide_company" class="job-card__logo">
@@ -57,7 +57,7 @@
             >
                 <i class="icon-bookmark"></i>
             </div>
-        </div>  
+        </div>
         <div v-if="grow && job_application !== null" class="job-card__detail">
             <div class="job-card__back">
                 <a href="#" title="Kembali" @click.prevent="back"

@@ -7,14 +7,19 @@
       </div>
     </div>
 
-    <div class="new-auth-layout__form justify-center sm-col-12 lg-col-5 md-col-5">
+    <div class="new-auth-layout__formemp justify-center sm-col-12 lg-col-5 md-col-5">
       <div class="mobile-black-screen flex flex-column flex-content-center col-10 lg-col-8 md-col-8 sm-col-10">
         <h2 class="sm-hide xs-hide mb2">Sign in as an Employer</h2>
+        <div class="md-hide lg-hide my3">
+          <h1 class="mobile-color-white">Welcome Back<br> Employer!</h1>
+          <span class="color-grey">Not a Employer? <a href="/auth/logincandidate" class="color-grey underline">Login as an Candidate</a></span>
+        </div>
+        
         <div class="user-auth">
           <label for="email" class="bold sm-hide xs-hide">Email</label>
           <div class="user-auth__input" :class="{active : emailAct}">
             <input id="email" 
-              placeholder="email address" 
+              placeholder="Enter Your Email" 
               v-model="form.email" type="email" 
               autocomplete="off"
               @input="chackingEmail"
@@ -28,7 +33,7 @@
           <label for="password" class="bold sm-hide xs-hide">Password</label>
           <div class="user-auth__input" :class="{active : passwordAct}">
             <input id="password" 
-            placeholder="password" 
+            placeholder="Enter your password" 
             :type='visible ? "text" : "password"' 
             autocomplete="off" 
             minlength="8"
@@ -42,10 +47,13 @@
             </button>
           </div>
           <div class="flex justify-between">
+              <input type="checkbox" class="checkmark left-align m1" id="rememberMe">
+              <label class="left-align m1 mobile-color-white">Remember Me</label>
+    
             <div id="password-err" class="error-message">
               {{err.password.value}}
             </div>
-            <nuxt-link to="/auth/forgot-password" title="Forgot password" class="bold right-align m1 color-grey mobile-color-white">Forgot password?</nuxt-link>
+            <nuxt-link to="/auth/forgot-password" title="Forgot password" class="right-align m1 color-grey mobile-color-white">Forgot password?</nuxt-link>
           </div>
 
           <button class="btn my1 btn--primary btn--block " :disabled="(!err.password.valid || !err.email.valid) || processing" @click="login">

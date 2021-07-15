@@ -2,6 +2,7 @@ require("dotenv").config();
 
 export default {
     // Global page headers (https://go.nuxtjs.dev/config-head)
+    target: 'static',
     head: {
         title: "Reqruit",
         meta: [
@@ -35,6 +36,7 @@ export default {
 
     // Global CSS (https://go.nuxtjs.dev/config-css)
     css: ["~/assets/scss/main.scss"],
+
 
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
     plugins: [

@@ -4,11 +4,11 @@
       <img :src="logo_url" alt="logo" class="logo">
     </div>
 
-    <div class="col-12 flex justify-center menu">
+    <div class="col-12 sm-flex justify-center menu">
       <div>
        <ul>
           <li>
-            About
+            <a href="/about" class="color-white"> About</a>
           </li>
           <li>
             <a href="https://employer.reqruitasia.com/" class="color-white">Employer</a>
@@ -20,7 +20,7 @@
             Insights
           </li>
           <li>
-            Contact Us
+            <a href="/contact_us" class="color-white">Contact Us</a>
           </li>
         </ul>
       </div>
